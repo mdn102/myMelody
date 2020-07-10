@@ -1,0 +1,30 @@
+
+<div class="jumbotron">
+    <div class="container">
+        <h4>Hi <%= currentUser.name %>. Enjoy 🎧 your song 🎤 </h4>
+        <a class="backBtn" href="/search"> &larr; Back </a>
+        <br><br><br><br><br>
+    </div>
+</div>
+
+<% if (results) { %> 
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Listening</th>  
+            <th>Favorite</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% results.forEach(function(item) { %>
+            <tr>
+                <td><%= item.name %></td>   
+                <td ><audio controls><source src="<%= item.preview_url %>" type="audio/mpeg"></audio></td>
+                <td><a href=""><i class="fa fa-thumbs-up"></i></a></td>
+            </tr> 
+        <% }) %>    
+        </tbody>
+    </table>
+<% } %>
+

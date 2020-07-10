@@ -1,0 +1,68 @@
+
+<div class="jumbotron">
+  <h4>Hi <%= currentUser.name %> 🎭. Take a fews relaxing minutes to listen your sobbing soul 💃🏻 while API searching ... </h4>
+  <a class="backBtn" href="/search"> &larr; Back </a>
+  <br><br><br><br><br>
+</div>
+<form action="/tracks" method="post" role="form" enctype="application/x-www-form-urlencoded">
+  <div class="form-group">
+      <label for="param_type">Type</label>
+      <input type="text" class="form-control" name="param_type" id="param_type" placeholder="track, album or artist">
+  </div>
+  <div class="form-group">
+      <label for="param_query">Topic</label>
+      <input type="text" class="form-control" name="param_query" id="param_query" placeholder="What are you searching...">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+</form>
+
+<% if (results) { %> 
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <td>Image</td>
+            <th>Album</th>
+            <th>Artist</th>
+            <th class="preview">Preview</th>  
+        </tr>
+        </thead>
+        <tbody>
+        <% results.forEach(function(item) { %>
+            <% if (!item.image) { %>
+                  <tr>
+                    <td colspan="2"><%= item.album %></td>
+                    <td><%= item.artist %></td>
+                    <td ><audio controls><source src="<%= item.preview_url %>" type="audio/mpeg"></audio></td>
+                    <td><a href=""><i class="fa fa-thumbs-up"></i></a></td>
+                  </tr>
+          <%  } else if (!item.artist){ %>
+                  <tr>
+                    <td>
+                      <img class="image" src="<%= item.image.url %>" /> 
+                    </td>
+                    <td colspan="2"><%= item.name %></td>
+                    <td>
+                      <form action="/albums/<%= item.id %>" method="GET" role="form" enctype="application/x-www-form-urlencoded">
+                        <button type="submit" class="btn btn-primary" >View Albums</button>
+                      </form> 
+                    </td>
+                  </tr>
+          <% } else { %> 
+                  <tr>
+                    <td>
+                      <img class="image" src="<%= item.image.url %>" /> 
+                    </td>
+                    <td><%= item.name %></td>
+                    <td><%= item.artist %></td>
+                    <td>
+                      <form action="/tracks/<%= item.id %>" method="GET" role="form" enctype="application/x-www-form-urlencoded">
+                        <button type="submit" class="btn btn-primary" >View Tracks</button>
+                      </form> 
+                    </td>
+                  </tr>
+          <% } %>
+        <% }) %>
+        </tbody>
+    </table>
+<% } %>

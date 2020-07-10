@@ -1,0 +1,68 @@
+
+  body {
+    background: url(../images/musicbg5.jpg) !important;
+    padding: 5px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-size: auto;
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgb(0, 174, 255);
+  }
+
+  a {
+    color: red;
+    padding: 1em;
+  }
+
+  .backBtn {
+    color: orange;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  label {
+    color: red;
+    padding: 5px;
+  }
+
+  th, td {
+    color: yellowgreen;
+  }
+
+  .btn {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .fa {
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    color: yellow;
+  }
+  
+  .fa:hover {
+    color: blue;
+  }
+
+  .image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .jumbotron{
+    background-image: url('../images/musicbg2.jpg');
+    background-size: 100% 100%;
+    padding-top: 10px;
+    text-align: center;
+    /* backdrop-filter: blur(5px); */
+  } 
+
+  h2, h3, h4, legend {
+    color: yellowgreen;
+  }
+

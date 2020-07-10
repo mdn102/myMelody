@@ -1,0 +1,41 @@
+{
+  "name": "myMelody",
+  "version": "1.0.0",
+  "description": "Spotify API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "minh.nguyen",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "connect-flash": "^0.1.1",
+    "connect-session-sequelize": "^7.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "flash": "^1.1.0",
+    "helmet": "^3.23.3",
+    "jumbotron": "^0.2.9",
+    "morgan": "^1.10.0",
+    "node-spotify-api": "^1.1.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.2.1",
+    "sequelize": "^6.3.0",
+    "serve-favicon": "^2.5.0",
+    "session-store": "0.0.6",
+    "spotify-web-api-node": "^4.0.0",
+    "url": "^0.11.0"
+  }
+}

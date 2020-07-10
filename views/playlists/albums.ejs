@@ -1,0 +1,36 @@
+
+<div class="jumbotron">
+    <div class="container">
+      <h4>Hi <%= currentUser.name %>🎭. Select your album 🎬 💽. </h4>
+      <a class="backBtn" href="/search"> &larr; Back </a>
+      <br><br><br><br><br>
+    </div>
+</div>
+
+
+
+<% if (results) { %> 
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Image</th>  
+            <th>Name</th>
+            <th>Preview</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% results.forEach(function(item) { %>
+            <tr>
+                <td>
+                  <img class="image" src="<%= item.images[0].url %>" /> 
+                </td>
+                <td><%= item.name %></td>   
+                <td>
+                    <a href="/tracks/<%= item.id %>" >View Tracks</a>
+                </td>
+            </tr> 
+          <% }) %>    
+        </tbody>
+    </table>
+<% } %>
+

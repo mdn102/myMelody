@@ -1,0 +1,19 @@
+<div class="jumbotron">
+    <h4>Hi <%= currentUser.name %> 🎭. Welcome to myMelody 💃🏻🕺 </h4>
+    <br><br><br><br><br>
+  </div>
+
+  <% if (currentUser) { %>
+    <div class="well">
+      <h2>
+        <a href="/user/<%= user.id %>">
+          <%= user.getName() %>
+          <%= user.getEmail() %>
+        </a>
+      </h2>
+    </div>
+  <% } %>
+  
+  <hr />
+  
+  <a href="/">&larr; Back Home</a>
