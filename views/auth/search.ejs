@@ -7,7 +7,11 @@
 <form action="/tracks" method="post" role="form" enctype="application/x-www-form-urlencoded">
   <div class="form-group">
       <label for="param_type">Type</label>
-      <input type="text" class="form-control" name="param_type" id="param_type" placeholder="track, album or artist">
+      <select id="param_type" name="param_type">
+        <option value="track">track</option>
+        <option value="album">album</option>
+        <option value="artist">artist</option>
+      </select>
   </div>
   <div class="form-group">
       <label for="param_query">Topic</label>
