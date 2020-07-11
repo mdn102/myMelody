@@ -91,8 +91,8 @@ app.get('/tracks/:id', (req, res) => {
     spotify
     .request('https://api.spotify.com/v1/albums/'+ req.params.id + '/tracks')
     .then(function(data) {
-    //   console.log(data); 
-    //   console.log('🎡')
+      console.log(data); 
+      console.log('🎡')
       res.render('playlists/tracks', {results: data.items})
     })
     .catch(function(err) {
@@ -100,6 +100,20 @@ app.get('/tracks/:id', (req, res) => {
     })
 });
 
+
+// // View tracks from playlist
+app.get('/tracks/:id', (req, res) => {
+    spotify
+    .request('https://api.spotify.com/v1/albums/'+ req.params.id + '/tracks')
+    .then(function(data) {
+      console.log(data); 
+      console.log('🎡')
+      res.render('playlists', {results: data.items})
+    })
+    .catch(function(err) {
+    console.error('Error occurred: ' + err); 
+    })
+});
 
 // include auth controller
 app.use('/auth', require('./controllers/auth'));

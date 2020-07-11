@@ -31,12 +31,14 @@
     "node-spotify-api": "^1.1.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "pg": "^8.2.1",
-    "sequelize": "^6.3.0",
-    "sequelize-cli": "^6.2.0",
+    "pg": "^8.3.0",
+    "sequelize": "^6.3.1",
     "serve-favicon": "^2.5.0",
     "session-store": "0.0.6",
     "spotify-web-api-node": "^4.0.0",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
   }
 }

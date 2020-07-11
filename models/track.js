@@ -2,7 +2,6 @@
 const {
   Model
 } = require('sequelize');
-const playlist = require('./playlist');
 module.exports = (sequelize, DataTypes) => {
   class track extends Model {
     /**
@@ -13,14 +12,14 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       models.track.belongsTo(models.user)
-      // models.track.belongsTo(models.playlist)
+      models.track.belongsTo(models.playlist)
     }
   };
   track.init({
-    artist: DataTypes.STRING,
     song: DataTypes.STRING,
-    preview: DataTypes.STRING,
-    album: DataTypes.STRING
+    artist: DataTypes.STRING,
+    album: DataTypes.STRING,
+    playlistId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'track',

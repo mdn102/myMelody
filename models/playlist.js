@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       models.playlist.belongsTo(models.user)
       models.playlist.hasMany(models.comment)
-      models.playlist.hasMany(models.track)
+      // models.playlist.hasMany(models.track)
       models.playlist.belongsToMany(models.tag, {through: 'playliststags'})
     }
   };

@@ -13,7 +13,7 @@
         <tr>
             <th>Name</th>
             <th>Listening</th>  
-            <th>Favorite</th>
+            <th>Save</th>
         </tr>
         </thead>
         <tbody>
@@ -21,7 +21,11 @@
             <tr>
                 <td><%= item.name %></td>   
                 <td ><audio controls><source src="<%= item.preview_url %>" type="audio/mpeg"></audio></td>
-                <td><a href=""><i class="fa fa-thumbs-up"></i></a></td>
+                <td>
+                    <form action="/playlist/<%= item.id %>" method="POST" role="form" enctype="application/x-www-form-urlencoded">
+                        <button type="submit" class="btn btn-primary" ><i class="fa fa-save"></i></button>
+                    </form> 
+                </td>
             </tr> 
         <% }) %>    
         </tbody>

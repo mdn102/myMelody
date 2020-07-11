@@ -26,11 +26,11 @@ router.post('/tracks/:id',(req, res) => {
 
   db.playlist.create({
     name: req.params.name,
-    content: req.params.preview,
+    content: req.params.preview_url,
     userId: req.body.userId
   })
   .then(function(post) {
-    res.redirect('/')
+    res.redirect('/profile')
   })
   .catch(function(error) {
     res.status(400).render('main/404')

@@ -8,17 +8,17 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      artist: {
-        type: Sequelize.STRING
-      },
       song: {
         type: Sequelize.STRING
       },
-      preview: {
+      artist: {
         type: Sequelize.STRING
       },
       album: {
         type: Sequelize.STRING
+      },
+      playlistId: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

@@ -47,6 +47,7 @@
   
   .fa:hover {
     color: blue;
+    background: none;
   }
 
   .image {
