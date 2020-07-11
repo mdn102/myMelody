@@ -1,12 +1,12 @@
 <% if (alerts.error) { %>
     <% alerts.error.forEach(function(message) { %>
-        <div style="background-color: red; color: white;">
+        <div style="background-color: red; color: white; text-align: center;">
             <%= message %>
         </div>
     <% }); %>
 <% } else if (alerts.success) { %>
     <% alerts.success.forEach(function(message) { %>
-        <div style="background: green; color: white;">
+        <div style="background: green; color: white; text-align: center;">
             <%= message %>
         </div>
     <% }); %>
