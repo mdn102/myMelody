@@ -38,14 +38,21 @@
     text-align: center;
   }
 
-  .fa {
+  .saveBtn {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+    color: yellow;
     font-size: 20px;
     cursor: pointer;
     user-select: none;
-    color: yellow;
+    border: none;
+      
   }
-  
-  .fa:hover {
+
+  .saveBtn:hover {
     color: blue;
     background: none;
   }
