@@ -1,5 +1,5 @@
 {
-  "name": "myMelody",
+  "name": "mymelody",
   "version": "1.0.0",
   "description": "Spotify API",
   "main": "app.js",
@@ -11,12 +11,13 @@
   "keywords": [],
   "dependencies": {
     "axios": "^0.19.2",
-    "bcrypt": "^5.0.0",
+    "bcryptjs": "^5.0.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.0",
     "connect-flash": "^0.1.1",
     "connect-session-sequelize": "^7.0.0",
     "cookie-parser": "^1.4.5",
+    "cool-ascii-faces": "^1.3.4",
     "cors": "^2.8.5",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
@@ -40,5 +41,13 @@
   },
   "devDependencies": {
     "sequelize-cli": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhd-nguyen/mymelody.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minhd-nguyen/myMelody/issues"
+  },
+  "homepage": "https://github.com/minhd-nguyen/myMelody#readme"
 }
