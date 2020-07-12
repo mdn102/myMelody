@@ -14,7 +14,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <div class="auth">
                 <% if (currentUser) { %>
                     <a href="/auth/logout">Logout</a>
                     <a href="/search">Search</a>
@@ -25,7 +25,7 @@
                     <a href="/auth/login">Login</a>
                     <a href="/">Home</a>
                 <% } %>
-            </nav>
+            </div>
         </header>
         <div class="container">
             <h1>Listening on myMelody 🥁🎻🎷🎺🎸</h1>

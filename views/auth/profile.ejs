@@ -4,9 +4,7 @@
     <br><br><br><br><br>
 </div>
 
-
 <hr />
-
 
 <% if (currentUser) { %>
   <div class="well">
@@ -17,7 +15,35 @@
   </div> 
 <% } %>
 
-
 <hr />
 
+<h3>Create a new event</h3>
 
+<form action="/playlists" method="POST">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="title" required>
+  </div>
+
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea type="text" class="form-control" id="content" name="content" required></textarea>
+  </div>
+
+  <input type="submit" class="btn btn-primary">
+</form>
+
+<% if(playlists) { %>
+    <% playlists.forEach(playlist => { %>
+        <div class="event">
+            <p class="title">
+                <a  href="/playlists/<%= playlist.id %>"><%= playlist.title %></a> 
+            </p>
+            <form method="POST" action="/playlists/<%= playlist.id %>?_method=DELETE" >
+                <button class="btnEvent" type="submit" value="Delete"></button>
+            </form>
+        </div>
+    <% }) %>
+<% } else { %>
+  <h3>No event yet!</h3>
+<% } %>

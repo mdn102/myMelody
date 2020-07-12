@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
       models.playlist.belongsTo(models.user)
       models.playlist.hasMany(models.comment)
       models.playlist.hasMany(models.track)
-      models.playlist.belongsToMany(models.tag, {through: 'playliststags'})
     }
   };
   playlist.init({

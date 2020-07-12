@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const session = require("express-session");
 const flash = require("connect-flash");
 const passport = require('./config/ppConfig');
+const moment = require('moment');
 const db = require('./models');
 const isLoggedIn = require('./middleware/isLoggedIn');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -20,6 +21,13 @@ app.set('view engine','ejs');
 app.use(ejsLayouts);
 app.use(require('morgan')('dev'));
 app.use(helmet());
+
+// middleware that allows us to access the 'moment' library in every EJS view
+app.use(function(req, res, next) {
+    res.locals.moment = moment
+    next()
+})
+
 
 // create new instance of class Sequelize Store
 const sessionStore = new SequelizeStore({
@@ -65,7 +73,11 @@ app.get('/', function(req, res) {
 
 app.get('/profile', isLoggedIn, function(req, res) {
     // console.log(results);
-    res.render('auth/profile');
+    db.playlist.findAll({
+        where: { userId: req.user.id }
+    }).then(playlists => {
+        res.render('auth/profile', { playlists});
+    })
 });
 
 app.get('/search', function(req, res) {
@@ -86,40 +98,15 @@ app.get('/albums/:id', (req, res) => {
     })
 });
 
-// // View tracks from album
-app.get('/tracks/:id', (req, res) => {
-    spotify
-    .request('https://api.spotify.com/v1/albums/'+ req.params.id + '/tracks')
-    .then(function(data) {
-    //   console.log(data); 
-    //   console.log('🎡')
-      res.render('playlists/tracks', {results: data.items})
-    })
-    .catch(function(err) {
-    console.error('Error occurred: ' + err); 
-    })
-});
 
 
-// // View tracks from playlist
-app.get('/tracks/:id', (req, res) => {
-    spotify
-    .request('https://api.spotify.com/v1/albums/'+ req.params.id + '/tracks')
-    .then(function(data) {
-    //   console.log(data); 
-    //   console.log('🎡')
-      res.render('playlists', {results: data.items})
-    })
-    .catch(function(err) {
-    console.error('Error occurred: ' + err); 
-    })
-});
+
 
 // include auth controller
 app.use('/auth', require('./controllers/auth'));
 app.use('/tracks', require('./controllers/tracks'));
 app.use('/users', require('./controllers/users'));
-
+app.use('/playlists', require('./controllers/playlists'));
 
 
 
@@ -128,3 +115,4 @@ app.listen(process.env.PORT || 8080, function() {
     console.log(`Listening to the smooth sweet sounds on port ${process.env.PORT} 🛰.`);
 });
 
+// module.exports = server

@@ -9,10 +9,10 @@
   
   h1 {
     text-align: center;
-    color: rgb(0, 174, 255);
+    color: lightskyblue;
   }
 
-  a {
+  .auth {
     color: red;
     padding: 1em;
   }
@@ -30,6 +30,27 @@
 
   th, td {
     color: yellowgreen;
+  }
+
+  .title {
+    color: orange;
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  .btnEvent {
+    position: absolute;
+    align-items: flex-end;
+    background-color: lime;
+  }
+
+  .content {
+    color: orchid;
+    font-size: 20px;
+    padding: 5px;
   }
 
   .btn {

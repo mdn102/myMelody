@@ -79,5 +79,18 @@ router.post('/', function(req, res) {
     
 });
 
+// View tracks from album
+router.get('/:id', (req, res) => {
+    spotify
+    .request('https://api.spotify.com/v1/albums/'+ req.params.id + '/tracks')
+    .then(function(data) {
+    //   console.log(data); 
+    //   console.log('🎡')
+      res.render('playlists/tracks', {results: data.items})
+    })
+    .catch(function(err) {
+    console.error('Error occurred: ' + err); 
+    })
+});
 
 module.exports = router;

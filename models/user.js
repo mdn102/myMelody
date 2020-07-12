@@ -47,6 +47,7 @@ module.exports = function(sequelize, DataTypes) {
         // TODO: any user association you want 
         models.user.hasMany(models.playlist)
         models.user.hasMany(models.track)
+        models.user.hasMany(models.comment)
     }
 
     // validPassword definition to validate password at user login 
