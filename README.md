@@ -1,5 +1,7 @@
  =========================================
+ 
  Welcome to myMelody:
+ 
  =========================================
 
 Name: Minh Nguyen 
@@ -61,7 +63,9 @@ Wireframe Link:
 
 
 =========================================
+
 Next Steps:
+
 =========================================
 
 1. Refactoring code and making code more efficient and DRY
