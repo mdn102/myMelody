@@ -1,6 +1,6 @@
 
 ======================================
-         Welcome to myMelody:
+Welcome to myMelody:
 ======================================
 
 Name: Minh Nguyen 
@@ -10,7 +10,7 @@ Purpose: Project 2 for GA's SEIR-526
 App: myMelody
 
 ======================================
-         Description:
+Description:
 ======================================
 
 // myMelody is an application run on web sever , using Spotify API for searching the track, album or artist and return the result which are including name, image and some short audio clip for preview. You can also create an event , and your friend can post or comment on there. The another feature, you can download some demo preview clip within 30 secons to create you ring tone of your model. The purpose of app just for fun, relaxing and social media network of your own. Due to the fact that, I desiggned the interface looks friendly and flexible, using in muiltible device, such as you can use on mobile when you travel as well.
@@ -24,7 +24,7 @@ A screenshot of the app:
    ![Searching](https://i.imgur.com/I7ZdaiB.png)
 
 ======================================
-         Technologies Used:
+Technologies Used:
 ======================================
 
 The creation of this application was made possible with - 
@@ -34,14 +34,14 @@ The creation of this application was made possible with -
  - Javascript / Node.js
 
 ======================================
-         Getting Started:
+Getting Started:
 ======================================
 
 Click to play!
 https://mindmelody.herokuapp.com/
 
 ======================================
-         Code walk-through:
+Code walk-through:
 ======================================
 
 // Click register to sign up account
@@ -58,7 +58,7 @@ Wireframe Link:
 
 
 ======================================
-         Next Steps:
+Next Steps:
 ======================================
 
 1. Refactoring code and making code more efficient and DRY
