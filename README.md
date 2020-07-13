@@ -40,7 +40,7 @@ Getting Started:
 Click to play!
 https://mindmelody.herokuapp.com/
 
-======================================
+
 Code walk-through:
 ======================================
 
@@ -57,7 +57,7 @@ Code walk-through:
 Wireframe Link:
 
 
-======================================
+
 Next Steps:
 ======================================
 
