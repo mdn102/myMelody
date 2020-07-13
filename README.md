@@ -36,7 +36,7 @@ The creation of this application was made possible with -
  - CSS
  - Javascript / Node.js
 
-=================
+
 Getting Started:
 =================
 
