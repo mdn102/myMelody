@@ -13,7 +13,7 @@ App: myMelody
 Description:
 ======================================
 
-// myMelody is an application run on web sever , using Spotify API for searching the track, album or artist and return the result which are including name, image and some short audio clip for preview. You can also create an event , and your friend can post or comment on there. The another feature, you can download some demo preview clip within 30 secons to create you ring tone of your model. The purpose of app just for fun, relaxing and social media network of your own. Due to the fact that, I desiggned the interface looks friendly and flexible, using in muiltible device, such as you can use on mobile when you travel as well.
+// myMelody is an application run on web sever , using Spotify API for searching the track, album or artist and return the result which are including name, image and some short audio clip for preview. You can also create an event , and your friend can post or comment on there. The another feature, you can download some demo preview clip within 30 secons to create you ring tone of your model. The purpose of app just for fun, relaxing and social media network of your own. Due to the fact that, I desiggned the interface looks friendly and flexible, using in multible device, you can use on mobile as well.
 
 // myMelody is now available to play for free, jsut sign up and use it!
 
