@@ -1,5 +1,5 @@
 =========================================
-Welcome to myMelody:
+ Welcome to myMelody:
 =========================================
 
 Name: Minh Nguyen 
