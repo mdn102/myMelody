@@ -18,13 +18,13 @@ Description:
 // myMelody is now available to play for free, jsut sign up and use it!
 
 A screenshot of the app:
-   [Sign up](https://i.imgur.com/tw2Cykh.png)
+   ![Sign up](https://i.imgur.com/tw2Cykh.png)
    
-   [Create event](https://i.imgur.com/GsZWbhR.png)
+   ![Create event](https://i.imgur.com/GsZWbhR.png)
    
-   [Comment](https://i.imgur.com/RDSC4RR.png)
+   ![Comment](https://i.imgur.com/RDSC4RR.png)
    
-   [Searching](https://i.imgur.com/I7ZdaiB.png)
+   ![Searching](https://i.imgur.com/I7ZdaiB.png)
 
 
 Technologies Used:
