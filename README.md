@@ -16,13 +16,11 @@ Description:
 
 // myMelody is now available to play for free, jsut sign up and use it!
 
-
 A screenshot of the app:
    ![Sign up](https://i.imgur.com/tw2Cykh.png)
    ![Create event](https://i.imgur.com/GsZWbhR.png)
    ![Comment](https://i.imgur.com/RDSC4RR.png)
    ![Searching](https://i.imgur.com/I7ZdaiB.png)
-
 
 ======================================
 Technologies Used:
@@ -45,7 +43,6 @@ https://mindmelody.herokuapp.com/
 Code walk-through:
 ======================================
 
-
 // Click register to sign up account
 
 // Click Login to start using app.
@@ -55,7 +52,6 @@ Code walk-through:
 // Click Porfile to view your acc, create event. 
 
 // Click Home to go back homepage
-
 
 Wireframe Link:
 
