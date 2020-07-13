@@ -47,13 +47,13 @@ https://mindmelody.herokuapp.com/
 Code walk-through:
 ======================================
 
-// Click register to sign up account
+// Click Register to sign up account
 
 // Click Login to start using app.
 
-// Click Search to serach track, album or artist.
+// Click Search to search track, album or artist.
 
-// Click Porfile to view your acc, create event. 
+// Click Profile to view your acc, create event. 
 
 // Click Home to go back homepage
 
