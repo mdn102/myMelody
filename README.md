@@ -9,7 +9,7 @@ Purpose: Project 2 for GA's SEIR-526
 
 App: myMelody
 
-======================================
+
 Description:
 ======================================
 
@@ -23,7 +23,7 @@ A screenshot of the app:
    ![Comment](https://i.imgur.com/RDSC4RR.png)
    ![Searching](https://i.imgur.com/I7ZdaiB.png)
 
-======================================
+
 Technologies Used:
 ======================================
 
@@ -33,9 +33,9 @@ The creation of this application was made possible with -
  - CSS
  - Javascript / Node.js
 
-======================================
+=================
 Getting Started:
-======================================
+=================
 
 Click to play!
 https://mindmelody.herokuapp.com/
