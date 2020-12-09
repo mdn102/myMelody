@@ -5,8 +5,6 @@ Welcome to myMelody:
 
 Name: Minh Nguyen 
 
-Purpose: Project 2 for GA's SEIR-526
-
 App: myMelody
 
 
